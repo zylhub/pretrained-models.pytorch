@@ -5,7 +5,10 @@ The goal of this repo is:
 - to help to reproduce research papers results (transfer learning setups for instance),
 - to access pretrained ConvNets with a unique interface/API inspired by torchvision.
 
+<a href="https://travis-ci.org/Cadene/pretrained-models.pytorch"><img src="https://api.travis-ci.org/Cadene/pretrained-models.pytorch.svg?branch=master"/></a>
+
 News:
+- 27/10/2018: Fix compatibility issues, Add tests, Add travis
 - 04/06/2018: [PolyNet](https://github.com/CUHK-MMLAB/polynet) and [PNASNet-5-Large](https://arxiv.org/abs/1712.00559) thanks to [Alex Parinov](https://github.com/creafz)
 - 16/04/2018: [SE-ResNet* and SE-ResNeXt*](https://github.com/hujie-frank/SENet) thanks to [Alex Parinov](https://github.com/creafz)
 - 09/04/2018: [SENet154](https://github.com/hujie-frank/SENet) thanks to [Alex Parinov](https://github.com/creafz)
@@ -183,8 +186,8 @@ $ python examples/imagenet_logits.py -h
 ```
 
 ```
-$ python examples/imagenet_logits.py -a nasnetalarge --path_img data/cat.png
-> 'nasnetalarge': data/cat.png' is a 'tiger cat' 
+$ python examples/imagenet_logits.py -a nasnetalarge --path_img data/cat.jpg
+> 'nasnetalarge': data/cat.jpg' is a 'tiger cat' 
 ```
 
 ### Compute imagenet evaluation metrics
@@ -255,7 +258,7 @@ SE-ResNet50 | [Caffe](https://github.com/hujie-frank/SENet) | 77.63 | 93.64
 NASNet-A-Mobile | [Tensorflow](https://github.com/tensorflow/models/tree/master/research/slim) | 74.0 | 91.6
 [NASNet-A-Mobile](https://github.com/veronikayurchuk/pretrained-models.pytorch/blob/master/pretrainedmodels/models/nasnet_mobile.py) | Our porting | 74.080 | 91.740
 [ResNet34](https://github.com/Cadene/pretrained-models.pytorch#torchvision) | [Pytorch](https://github.com/pytorch/vision#models) | 73.554 | 91.456
-[BNInception](https://github.com/Cadene/pretrained-models.pytorch#bninception) | Our porting | 73.522 | 91.560
+[BNInception](https://github.com/Cadene/pretrained-models.pytorch#bninception) | Our porting | 73.524 | 91.562
 [VGG16_BN](https://github.com/Cadene/pretrained-models.pytorch#torchvision) | [Pytorch](https://github.com/pytorch/vision#models) | 73.518 | 91.608
 [VGG19](https://github.com/Cadene/pretrained-models.pytorch#torchvision) | [Pytorch](https://github.com/pytorch/vision#models) | 72.080 | 90.822
 [VGG16](https://github.com/Cadene/pretrained-models.pytorch#torchvision) | [Pytorch](https://github.com/pytorch/vision#models) | 71.636 | 90.354
